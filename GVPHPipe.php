@@ -25,7 +25,7 @@ $email = clean_email($email);
 //API Documentation: http://prowl.weks.net/api.php
 include('ProwlPHP.php');
 
-$prowl = new Prowl('3e6db53474cd702b39a3f11942315633f92b40fd');
+$prowl = new Prowl('your_prowl_api_key_goes_here');
 $prowl->push(array(
 	'application'	=> 'GV',
 	'event'			=> $email['subject'],
